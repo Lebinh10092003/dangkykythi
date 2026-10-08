@@ -165,7 +165,7 @@ document.querySelectorAll('[data-copy]').forEach(btn=>btn.addEventListener('clic
  copyText(document.getElementById(id).textContent,id==='account'?'số tài khoản':'nội dung chuyển khoản');
 }));
 document.getElementById('copy-bank-info').addEventListener('click',()=>{
- const details='Ngân hàng: '+cfg.bankName+'\\nSố tài khoản: '+cfg.account+'\\nChủ tài khoản: '+cfg.accountName+'\\nNội dung chuyển khoản: '+transferNote;
+ const details=['Ngân hàng: '+cfg.bankName,'Số tài khoản: '+cfg.account,'Chủ tài khoản: '+cfg.accountName,'Nội dung chuyển khoản: '+transferNote].join(String.fromCharCode(10));
  copyText(details,'thông tin nhận tiền');
 });
 document.getElementById('download-qr').addEventListener('click',async function(){
