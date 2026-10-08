@@ -1,19 +1,20 @@
-# Bộ chữ ký email FermatTech
+# Trang hướng dẫn hoàn tất đăng ký FIMO/FIEO
 
-Dự án HTML tĩnh dùng để tạo và copy chữ ký email cho nhân sự FermatTech.
+Trang chủ `index.html` hiển thị hướng dẫn hoàn tất lệ phí và tham gia nhóm Zalo theo mẫu BTC, thích ứng với điện thoại, máy tính bảng và laptop.
 
-## Chức năng
+## Cách sử dụng
 
-- Chọn nhân sự bằng menu thả xuống.
-- Chuyển giữa 2 trang: bản tiếng Việt và bản tiếng Anh.
-- Sửa nhanh nội dung bằng panel bên phải.
-- Copy chữ ký giữ định dạng để dán vào Gmail hoặc Outlook.
-- Logo dùng ảnh từ website FermatTech.
+- Mở GitHub Pages của repository hoặc mở `index.html`.
+- Sửa thông tin trường, ngân hàng, Zalo trong `CONFIG` ở cuối file.
+- Có thể tùy biến qua URL: `?school=THCS%20Phu%20La&student=Nguyen%20Van%20A&class=6A1`.
+- Các tham số khác: `bankName`, `bankId`, `account`, `accountName`, `zalo`.
+- VietQR hiển thị bằng `img.vietqr.io`; mã QR Zalo tạo bằng `api.qrserver.com`. Hai mã cần kết nối Internet. Kiểm tra mã bằng điện thoại trước khi phát hành.
+- **Quan trọng:** số tài khoản, tên chủ tài khoản và liên kết nhóm trong cấu hình được chép từ ảnh tham khảo, chưa được xác minh độc lập. BTC phải xác minh trước khi gửi phụ huynh. Dữ liệu học sinh trên URL có thể xuất hiện trong lịch sử trình duyệt/nhật ký máy chủ; không đưa thông tin nhạy cảm vào URL.
 
-## Cách dùng
+## Chức năng cũ
 
-Mở `index.html` bằng trình duyệt, chọn nhân sự, kiểm tra hoặc chỉnh nội dung, sau đó bấm **Copy chữ ký** và dán vào phần chữ ký trong Gmail/Outlook.
+Công cụ tạo chữ ký email FermatTech được giữ nguyên tại [email-signature.html](email-signature.html).
 
-## Lưu ý
+## Phạm vi
 
-Dữ liệu ngày sinh, số tài khoản và ngân hàng không được đưa vào chữ ký để tránh lộ thông tin cá nhân/tài chính.
+Đây là **trang xác nhận/hướng dẫn sau đăng ký**, chưa phải hệ thống thu thập dữ liệu, lưu đơn đăng ký hoặc xác nhận thanh toán tự động.
