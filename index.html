@@ -1,21 +1,147 @@
 <!doctype html>
 <html lang="vi">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bộ chữ ký email FermatTech</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123860">
+<meta name="description" content="Hướng dẫn hoàn tất đăng ký dự thi FIMO, FIEO năm học 2026–2027.">
+<title>Hoàn tất đăng ký FIMO, FIEO | FermatTech</title>
 <style>
-:root{--b:#1473d1;--d:#0f3a72;--t:#28323d;--m:#667085;--l:#d9e2ef;--bg:#f4f7fb}*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--t)}.app{max-width:1220px;margin:auto;padding:24px}.head{background:linear-gradient(135deg,#0f3a72,#1473d1);color:white;border-radius:20px;padding:22px 26px;margin-bottom:18px}.head h1{margin:0 0 8px;font-size:24px}.head p{margin:0;font-size:14px;line-height:1.45}.tabs{display:flex;gap:10px;margin:18px 0}.tab{border:1px solid var(--l);background:white;color:var(--d);padding:12px 16px;border-radius:12px;font-weight:700;cursor:pointer}.tab.on{background:var(--b);color:white;border-color:var(--b)}.grid{display:grid;grid-template-columns:minmax(690px,1fr) 360px;gap:16px}.card{background:white;border:1px solid var(--l);border-radius:18px;box-shadow:0 8px 22px rgba(15,58,114,.06)}.preview{padding:18px;overflow:auto}.top{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:end;margin-bottom:12px}.selectbox{max-width:430px}label{display:block;font-size:12px;font-weight:700;color:var(--d);margin-bottom:6px}select,input,textarea{width:100%;border:1px solid #cfd9e7;border-radius:12px;padding:10px 12px;font-size:13px;font-family:Arial,Helvetica,sans-serif;outline:none}.actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.btn{border:0;padding:10px 14px;border-radius:12px;font-weight:700;cursor:pointer;font-size:13px}.primary{background:var(--b);color:white}.ghost{background:#eef4fb;color:var(--d)}#state{font-size:13px;color:#12805c;font-weight:700;min-height:18px;margin:4px 0 12px}.pill{display:inline-block;background:#eef6ff;color:var(--d);font-weight:700;border-radius:999px;padding:7px 11px;font-size:12px;margin-bottom:10px}.stage{background:white;padding:18px;border-radius:14px;border:1px dashed #b9c8db;min-width:690px}.editor{padding:16px;position:sticky;top:18px}.editor h2{font-size:16px;color:var(--d);margin:4px 0 12px}.field{margin-bottom:11px}.field textarea{min-height:72px;resize:vertical}.hint{font-size:12px;color:var(--m);line-height:1.45;background:#f7f9fc;border-radius:12px;padding:10px;margin-top:10px}@media(max-width:1050px){.grid{grid-template-columns:1fr}.editor{position:static}.top{grid-template-columns:1fr}.actions{justify-content:flex-start}}
+:root{--navy:#14395f;--ink:#203246;--teal:#087657;--blue:#ecf3ff;--border:#d6e2ed;--muted:#526579;--bg:#f1f5f9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);font-family:Arial,"Helvetica Neue",sans-serif;color:var(--ink);line-height:1.6}
+button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}
+a{color:var(--navy);overflow-wrap:anywhere}
+.page{max-width:940px;margin:28px auto;background:#fff;border:1px solid #e3eaf0;border-top:5px solid #24779d;box-shadow:0 16px 50px #16395712;padding:36px clamp(20px,5vw,62px) 28px}
+.masthead{text-align:center;padding:0 0 17px}
+.logo{display:block;width:min(230px,60%);max-height:88px;object-fit:contain;margin:0 auto 18px}
+h1{font-size:clamp(20px,2.9vw,27px);line-height:1.24;letter-spacing:.01em;color:var(--navy);margin:0 auto 7px;max-width:720px;font-weight:800}
+.year{letter-spacing:.19em;color:#52889e;font-weight:800;font-size:12px;margin:0}
+.rule{height:3px;width:85px;background:#73a4b7;border-radius:9px;margin:17px auto 0}
+.greeting{font-weight:800;color:var(--navy);margin:5px 0 4px}
+.intro{margin:0 0 24px;font-size:15px}
+.section-title{display:flex;align-items:center;gap:12px;margin:25px 0 8px;color:var(--navy);font-size:18px;line-height:1.35;font-weight:800}
+.step{width:32px;height:32px;flex:none;display:inline-grid;place-items:center;background:var(--navy);color:white;border-radius:50%;font-size:16px}
+.section-copy{font-size:14px;margin:7px 0 12px}
+.info-card{border:1px solid #cde2d8;background:linear-gradient(110deg,#f0faf5,#e7f4ed);border-radius:15px;padding:24px;display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:24px;align-items:center}
+.bank-label{font-size:16px;font-weight:800;color:#086145;display:flex;align-items:center;gap:10px;margin:0 0 15px}
+.bank-icon{width:29px;height:29px;border-radius:7px;display:grid;place-items:center;color:#fff;background:#07805c;font-weight:800}
+.field-line{display:grid;grid-template-columns:180px minmax(0,1fr);gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px dashed #cddbd3;font-size:14px}
+.field-line:last-child{border-bottom:0}.field-line .value{font-weight:800;min-width:0;overflow-wrap:anywhere}
+.account-value{font-size:22px;color:#07553f;letter-spacing:.035em}
+.copyable{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.small-btn{background:white;border:1px solid #b6d2c4;color:#07553f;font-size:12px;font-weight:800;padding:5px 10px;border-radius:8px;min-height:34px}
+.qr-wrap{text-align:center;min-width:0}
+.qr{display:block;width:170px;max-width:100%;aspect-ratio:1/1;object-fit:contain;background:white;border:1px solid #d4e4db;border-radius:8px;padding:6px;margin:auto}
+.qr-caption{display:block;margin-top:7px;font-size:11px;color:var(--muted)}
+.note{border-left:4px solid #dfb52a;background:#fff8e1;border-radius:0 8px 8px 0;padding:13px 17px;font-size:13px;margin-top:13px}
+.zalo-card{border-color:#cedeee;background:linear-gradient(110deg,#eef5ff,#e6eef9)}
+.zalo-content p{margin:0 0 10px;font-size:14px}
+.zalo-content ul{margin:0 0 12px;padding-left:21px;font-size:14px}
+.zalo-content li{margin-bottom:3px}
+.zalo-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;background:var(--navy);color:#fff;border-radius:22px;padding:10px 17px;font-size:13px;font-weight:800;max-width:100%;overflow-wrap:anywhere;text-align:center}
+.zalo-card .qr{border-color:#cbdced}
+.footer{border-top:1px solid #e2e8f0;display:flex;justify-content:space-between;gap:22px;margin-top:25px;padding-top:16px;font-size:13px;color:#536474}
+.footer a{color:inherit;text-decoration:none}
+.sign{text-align:right;color:var(--navy);white-space:nowrap;font-weight:800}
+.sign em{display:block;font-weight:400;color:var(--ink)}
+.status{min-height:19px;font-size:12px;font-weight:700;color:#06714c;margin:6px 0 0}
+@media(max-width:700px){
+body{background:#fff}.page{margin:0;min-height:100vh;border-left:0;border-right:0;border-bottom:0;box-shadow:none;padding:25px 17px 30px}
+.logo{width:180px;max-height:67px;margin-bottom:13px}
+h1{font-size:21px}.intro{font-size:14px;margin-bottom:19px}
+.section-title{font-size:16px;margin-top:22px}.step{width:29px;height:29px}
+.info-card{grid-template-columns:1fr;gap:18px;padding:18px 16px}
+.field-line{grid-template-columns:1fr;gap:1px;padding:8px 0}.field-line .value{font-size:14px}.field-line .account-value{font-size:21px}
+.qr{width:188px}.qr-caption{font-size:12px}
+.zalo-content{text-align:left}.zalo-link{width:100%}
+.footer{flex-direction:column;gap:13px}.sign{text-align:left}
+}
+@media(min-width:701px) and (max-width:900px){.page{margin:16px;max-width:none}.info-card{grid-template-columns:minmax(0,1fr) 155px}.qr{width:150px}.field-line{grid-template-columns:160px minmax(0,1fr)}}
+@media print{body{background:#fff}.page{box-shadow:none;border:0;margin:0;max-width:none;padding:10mm}.small-btn{display:none}.info-card{-webkit-print-color-adjust:exact;print-color-adjust:exact}.footer{break-inside:avoid}}
 </style>
 </head>
 <body>
-<div class="app"><div class="head"><h1>Bộ chữ ký email FermatTech</h1><p>Chọn nhân sự bằng menu thả xuống, chuyển giữa 02 trang Việt/Anh, chỉnh nội dung tại panel bên phải, sau đó bấm “Copy chữ ký”.</p></div><div class="tabs"><button class="tab on" data-lang="vn">Trang 1 · Bản tiếng Việt</button><button class="tab" data-lang="en">Trang 2 · English version</button></div><div class="grid"><main class="card preview"><div class="top"><div class="selectbox"><label for="staff">Danh sách nhân sự</label><select id="staff"></select></div><div class="actions"><button class="btn primary" id="copy">Copy chữ ký</button><button class="btn ghost" id="reset">Khôi phục</button></div></div><div id="state"></div><div class="pill" id="person"></div><div class="stage"><div id="sig"></div></div></main><aside class="card editor"><h2>Panel sửa nội dung</h2><div class="field"><label>Họ tên</label><input id="name"></div><div class="field"><label>Chức vụ</label><input id="role"></div><div class="field"><label>Tên công ty</label><input id="company"></div><div class="field"><label>Số điện thoại</label><input id="phone"></div><div class="field"><label>Email chính</label><input id="email"></div><div class="field"><label>Email phụ</label><input id="alt" placeholder="Có thể để trống"></div><div class="field"><label>Website</label><input id="web"></div><div class="field"><label>Địa chỉ</label><textarea id="addr"></textarea></div><div class="hint">Sau khi chỉnh nội dung, bản xem trước sẽ tự cập nhật. Nút Copy sẽ lấy đúng nội dung mới đang hiển thị.</div></aside></div></div>
+<main class="page">
+<header class="masthead">
+<img class="logo" src="assets/fermattech-logo.png" alt="FermatTech" onerror="this.style.display='none'">
+<h1>XÁC NHẬN THÔNG TIN VÀ HOÀN TẤT<br>ĐĂNG KÝ DỰ THI FIMO, FIEO</h1>
+<p class="year">NĂM HỌC 2026 – 2027</p>
+<div class="rule"></div>
+</header>
+<p class="greeting">Kính chào Quý phụ huynh, thí sinh trường <span data-school>THCS Phú La</span>!</p>
+<p class="intro">Ban Tổ chức (BTC) trân trọng cảm ơn Quý phụ huynh và các em học sinh đã quan tâm, đăng ký tham dự cuộc thi FIMO, FIEO năm học 2026–2027. Để hoàn tất thủ tục đăng ký, Quý phụ huynh vui lòng thực hiện các bước dưới đây.</p>
+<section aria-labelledby="pay-title">
+<h2 class="section-title" id="pay-title"><span class="step">1</span>HƯỚNG DẪN HOÀN TẤT LỆ PHÍ</h2>
+<p class="section-copy">Quý phụ huynh vui lòng chuyển khoản lệ phí dự thi theo thông tin tài khoản sau hoặc quét mã QR:</p>
+<div class="info-card">
+<div>
+<p class="bank-label"><span class="bank-icon" aria-hidden="true">V</span>Ngân hàng <span id="bank-name">Vietcombank</span></p>
+<div class="field-line"><span>Số tài khoản</span><span class="copyable"><strong class="value account-value" id="account">1014561911</strong><button class="small-btn" data-copy="account" aria-label="Sao chép số tài khoản">Sao chép</button></span></div>
+<div class="field-line"><span>Chủ tài khoản</span><strong class="value" id="account-name">NGUYỄN THỊ PHƯƠNG</strong></div>
+<div class="field-line"><span>Nội dung chuyển khoản</span><span class="copyable"><strong class="value" id="transfer-note">Họ tên thí sinh - Lớp - THCS Phú La</strong><button class="small-btn" data-copy="transfer-note" aria-label="Sao chép nội dung chuyển khoản">Sao chép</button></span></div>
+</div>
+<div class="qr-wrap"><img id="bank-qr" class="qr" alt="Mã VietQR chuyển khoản đến tài khoản Ban Tổ chức" loading="eager"><small class="qr-caption">Quét mã để chuyển khoản</small></div>
+</div>
+<div class="note"><strong>Lưu ý:</strong> Sau khi hoàn tất thanh toán, BTC sẽ tiến hành xuất hóa đơn VAT theo thông tin phụ huynh đã cung cấp trong vòng 48 giờ. Vui lòng kiểm tra kỹ tên chủ tài khoản và nội dung chuyển khoản trên ứng dụng ngân hàng trước khi xác nhận.</div>
+</section>
+<section aria-labelledby="zalo-title">
+<h2 class="section-title" id="zalo-title"><span class="step">2</span>THAM GIA NHÓM ZALO HỖ TRỢ</h2>
+<div class="info-card zalo-card">
+<div class="zalo-content"><p>BTC đã lập nhóm Zalo riêng để hỗ trợ các thí sinh trường <span data-school>THCS Phú La</span> tham dự cuộc thi. Đây là kênh chính thức để:</p>
+<ul><li>Cập nhật thông báo về lịch thi, hướng dẫn dự thi và kết quả;</li><li>Hỗ trợ kỹ thuật, giải đáp thắc mắc trong quá trình dự thi.</li></ul>
+<p>Quý phụ huynh vui lòng quét mã QR hoặc truy cập đường dẫn:</p>
+<a class="zalo-link" id="zalo-link" href="https://zalo.me/" target="_blank" rel="noopener noreferrer">Tham gia nhóm Zalo hỗ trợ ↗</a>
+</div>
+<div class="qr-wrap"><img id="zalo-qr" class="qr" alt="Mã QR truy cập nhóm Zalo hỗ trợ" loading="lazy"><small class="qr-caption">Quét mã để vào nhóm</small></div>
+</div>
+</section>
+<footer class="footer"><div><strong>Liên hệ hỗ trợ</strong><div>Hotline: <a href="tel:0969627162">0969 627 162</a> (08:00–17:30, thứ Hai – thứ Sáu)</div><div>Email: <a href="mailto:khaothi@fermat.vn">khaothi@fermat.vn</a></div><p class="status" id="status" aria-live="polite"></p></div><div class="sign"><em>Trân trọng!</em>Ban Tổ chức</div></footer>
+</main>
 <script>
-const ORG={logoUrl:'https://lebinh10092003.github.io/linhtinh/assets/fermattech-logo.png',companyVn:'CÔNG TY CỔ PHẦN CÔNG NGHỆ FERMAT',companyEn:'FERMAT TECHNOLOGY JOINT STOCK COMPANY',addressVn:'Phòng 1603, Tòa nhà Eurowindow, 27 Trần Duy Hưng, Phường Yên Hòa, Hà Nội',addressEn:'Room 1603, Eurowindow Building, 27 Tran Duy Hung Street, Yen Hoa Ward, Hanoi, Vietnam',website:'www.fermat.vn',employees:[['LÊ ĐỨC THUẬN','LE DUC THUAN','Chủ tịch','Chairman','0983122314','thuanld@fermat.edu.vn','thuanld.fe@gmail.com'],['PHẠM VIỆT DŨNG','PHAM VIET DUNG','Phó Giám đốc','Deputy Director','0984690582','dungpv@fermat.edu.vn',''],['NGÔ THỊ LIÊN','NGO THI LIEN','Phó Giám đốc','Deputy Director','0988955694','liennt@fermat.edu.vn',''],['NGUYỄN HẢI HÀ','NGUYEN HAI HA','Kế toán','Accountant','0963495440','hanh@fermat.edu.vn','nguyenhaiha233kt@gmail.com'],['NGÔ THỊ NGỌC YẾN','NGO THI NGOC YEN','Trưởng phòng Truyền thông','Head of Communications Department','0902653738','yenntn@fermat.edu.vn',''],['LÊ VĂN BÌNH','LE VAN BINH','Nhân viên Phòng CNTT','IT Officer','0374202948','binhlv@fermat.edu.vn',''],['NGUYỄN THANH PHONG','NGUYEN THANH PHONG','Nhân viên Phòng Khảo thí','Assessment Department Officer','0869962581','phongnt@fermat.edu.vn',''],['NGUYỄN THU PHƯƠNG','NGUYEN THU PHUONG','Nhân viên Truyền thông','Communications Officer','0367468521','phuongnt@fermat.edu.vn','']]};
-let D=JSON.parse(JSON.stringify(ORG)),lang='vn',idx=0;const $=id=>document.getElementById(id),E={staff:$('staff'),sig:$('sig'),state:$('state'),person:$('person'),name:$('name'),role:$('role'),company:$('company'),phone:$('phone'),email:$('email'),alt:$('alt'),web:$('web'),addr:$('addr')};
-function esc(v){return String(v??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#039;')}function fmt(v){const d=String(v||'').replace(/\D/g,'');return d.startsWith('0')&&d.length===10?'+84 '+d.slice(1,4)+' '+d.slice(4,7)+' '+d.slice(7):v||''}function base(){let e=D.employees[idx],vn=lang==='vn';return{name:vn?e[0]:e[1],role:vn?e[2]:e[3],company:vn?D.companyVn:D.companyEn,address:vn?D.addressVn:D.addressEn,page:vn?'Bản tiếng Việt':'English version',labels:{address:vn?'Địa chỉ':'Address',mobile:vn?'Di động':'Mobile',email:'Email',website:'Website',alt:vn?'Email phụ':'Alternative email'}}}
-function values(){let b=base();return{name:E.name.value,role:E.role.value,company:E.company.value,phone:E.phone.value,email:E.email.value,alt:E.alt.value,web:E.web.value,address:E.addr.value,labels:b.labels}}
-function sig(v){let alt=v.alt?`<td style="padding:2px 12px 5px 0"><span style="display:inline-block;width:18px;height:18px;line-height:18px;text-align:center;border-radius:50%;background:#1473d1;color:#fff;font-size:10px;font-weight:700;margin-right:7px;font-family:Arial,Helvetica,sans-serif">E</span>${v.labels.alt}: ${esc(v.alt)}</td>`:`<td style="padding:2px 12px 5px 0"></td>`;return `<table cellpadding="0" cellspacing="0" style="width:650px;border-collapse:collapse;border-top:5px solid #1473d1;border-bottom:9px solid #1473d1;background:#fff"><tr><td style="width:185px;padding:24px 24px 20px 14px;vertical-align:middle;text-align:center;border-right:1px solid #dcdcdc;font-family:Arial,Helvetica,sans-serif"><img src="${D.logoUrl}" alt="FermatTech" style="display:block;width:160px;max-width:160px;height:auto;border:0;outline:none;text-decoration:none;margin:0 auto"></td><td style="padding:17px 0 16px 25px;vertical-align:top;font-family:Arial,Helvetica,sans-serif;color:#333"><div style="font-size:22px;font-weight:700;color:#1473d1;letter-spacing:.3px;margin-bottom:8px;text-transform:uppercase">${esc(v.name)}</div><div style="font-size:13px;color:#333;margin-bottom:8px">${esc(v.role)}</div><div style="font-size:14px;font-weight:700;color:#006fe6;text-transform:uppercase;margin-bottom:12px">${esc(v.company)}</div><div style="border-top:1px solid #dcdcdc;width:440px;margin:0 0 12px 0"></div><table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-size:12px;line-height:1.45;font-family:Arial,Helvetica,sans-serif;color:#333"><tr><td colspan="2" style="padding:2px 12px 5px 0"><span style="display:inline-block;width:18px;height:18px;line-height:18px;text-align:center;border-radius:50%;background:#1473d1;color:#fff;font-size:10px;font-weight:700;margin-right:7px;font-family:Arial,Helvetica,sans-serif">A</span>${v.labels.address}: ${esc(v.address)}</td></tr><tr><td style="padding:2px 12px 5px 0"><span style="display:inline-block;width:18px;height:18px;line-height:18px;text-align:center;border-radius:50%;background:#1473d1;color:#fff;font-size:10px;font-weight:700;margin-right:7px;font-family:Arial,Helvetica,sans-serif">M</span>${v.labels.mobile}: ${esc(fmt(v.phone))}</td><td style="padding:2px 12px 5px 0"><span style="display:inline-block;width:18px;height:18px;line-height:18px;text-align:center;border-radius:50%;background:#1473d1;color:#fff;font-size:10px;font-weight:700;margin-right:7px;font-family:Arial,Helvetica,sans-serif">E</span>${v.labels.email}: ${esc(v.email)}</td></tr><tr><td style="padding:2px 12px 5px 0"><span style="display:inline-block;width:18px;height:18px;line-height:18px;text-align:center;border-radius:50%;background:#1473d1;color:#fff;font-size:10px;font-weight:700;margin-right:7px;font-family:Arial,Helvetica,sans-serif">W</span>${v.labels.website}: ${esc(v.web)}</td>${alt}</tr></table></td></tr></table>`}
-function fill(){E.staff.innerHTML='';D.employees.forEach((e,i)=>{let o=document.createElement('option');o.value=i;o.textContent=`${i+1}. ${e[0]} — ${e[2]}`;E.staff.appendChild(o)});E.staff.value=idx}function load(){let b=base(),e=D.employees[idx];E.name.value=b.name;E.role.value=b.role;E.company.value=b.company;E.phone.value=e[4];E.email.value=e[5];E.alt.value=e[6]||'';E.web.value=D.website;E.addr.value=b.address;E.state.textContent=''}function save(){let e=D.employees[idx];if(lang==='vn'){e[0]=E.name.value;e[2]=E.role.value;D.companyVn=E.company.value;D.addressVn=E.addr.value}else{e[1]=E.name.value;e[3]=E.role.value;D.companyEn=E.company.value;D.addressEn=E.addr.value}e[4]=E.phone.value;e[5]=E.email.value;e[6]=E.alt.value;D.website=E.web.value}function render(){let b=base();E.sig.innerHTML=sig(values());E.person.textContent=`${b.page} · ${E.name.value}`}['name','role','company','phone','email','alt','web','addr'].forEach(id=>E[id].addEventListener('input',()=>{save();fill();render()}));E.staff.onchange=()=>{idx=+E.staff.value;load();render()};document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{lang=b.dataset.lang;document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));b.classList.add('on');load();render()});$('reset').onclick=()=>{D=JSON.parse(JSON.stringify(ORG));load();fill();render();E.state.textContent='Đã khôi phục dữ liệu gốc.'};$('copy').onclick=async()=>{let h=sig(values());try{if(navigator.clipboard&&window.ClipboardItem){await navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([h],{type:'text/html'}),'text/plain':new Blob([E.sig.innerText],{type:'text/plain'})})])}else{let r=document.createRange();r.selectNodeContents(E.sig);let s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges()}E.state.textContent='Đã copy chữ ký.'}catch(e){E.state.textContent='Không copy được tự động. Hãy bôi đen vùng chữ ký và Ctrl+C.'}};fill();load();render();
+/*
+ * Thay đổi thông tin từng trường tại CONFIG hoặc truyền tham số URL:
+ * ?school=THCS%20Phu%20La&student=Nguyen%20Van%20A&class=6A1
+ * Có thể cấu hình riêng zalo, account, accountName, bankId.
+ * Mọi số tài khoản, mã QR và link nhóm phải được BTC xác minh trước khi công bố.
+ */
+const CONFIG={
+ school:'THCS Phú La',bankName:'Vietcombank',bankId:'VCB',
+ account:'1014561911',accountName:'NGUYỄN THỊ PHƯƠNG',
+ zalo:'https://zalo.me/g/eengl67zwdjmlte58y6'
+};
+const qs=new URLSearchParams(location.search);
+const get=(name,fallback)=>qs.get(name)?.trim()||fallback;
+const cfg={
+ school:get('school',CONFIG.school),bankName:get('bankName',CONFIG.bankName),
+ bankId:get('bankId',CONFIG.bankId),account:get('account',CONFIG.account),
+ accountName:get('accountName',CONFIG.accountName),zalo:get('zalo',CONFIG.zalo)
+};
+const student=get('student','Họ tên thí sinh'),classroom=get('class','Lớp');
+const transferNote=[student,classroom,cfg.school].join(' - ');
+document.querySelectorAll('[data-school]').forEach(el=>el.textContent=cfg.school);
+document.getElementById('bank-name').textContent=cfg.bankName;
+document.getElementById('account').textContent=cfg.account;
+document.getElementById('account-name').textContent=cfg.accountName;
+document.getElementById('transfer-note').textContent=transferNote;
+const bankQR=new URL('https://img.vietqr.io/image/'+encodeURIComponent(cfg.bankId)+'-'+encodeURIComponent(cfg.account)+'-compact2.png');
+bankQR.searchParams.set('accountName',cfg.accountName);
+bankQR.searchParams.set('addInfo',transferNote);
+document.getElementById('bank-qr').src=bankQR.toString();
+const validZalo=/^https:\/\/(zalo\.me|chat\.zalo\.me)\//i.test(cfg.zalo);
+const zl=document.getElementById('zalo-link'),zqr=document.getElementById('zalo-qr');
+if(validZalo){
+ zl.href=cfg.zalo;
+ zqr.src='https://api.qrserver.com/v1/create-qr-code/?size=320x320&margin=12&data='+encodeURIComponent(cfg.zalo);
+}else{
+ zl.removeAttribute('href');zl.textContent='Chưa cấu hình liên kết Zalo hợp lệ';zqr.hidden=true;
+}
+document.querySelectorAll('[data-copy]').forEach(btn=>btn.addEventListener('click',async()=>{
+ const value=document.getElementById(btn.dataset.copy).textContent;
+ try{await navigator.clipboard.writeText(value);document.getElementById('status').textContent='Đã sao chép: '+value}
+ catch{document.getElementById('status').textContent='Không thể tự sao chép, vui lòng chọn và sao chép thông tin thủ công.'}
+}));
 </script>
 </body>
 </html>
