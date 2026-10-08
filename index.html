@@ -27,7 +27,7 @@ h1{font-size:clamp(19px,2.65vw,25px);line-height:1.24;letter-spacing:0;color:var
 .section-title{display:flex;align-items:center;gap:12px;margin:25px 0 8px;color:var(--navy);font-size:18px;line-height:1.35;font-weight:800}
 .step{width:32px;height:32px;flex:none;display:inline-grid;place-items:center;background:var(--navy);color:white;border-radius:50%;font-size:16px}
 .section-copy{font-size:14px;margin:7px 0 12px}
-.info-card{border:1px solid #cde2d8;background:linear-gradient(110deg,#f0faf5,#e7f4ed);border-radius:15px;padding:24px;display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:24px;align-items:center}
+.info-card{border:1px solid #cde2d8;background:linear-gradient(110deg,#f0faf5,#e7f4ed);border-radius:15px;padding:24px;display:grid;grid-template-columns:minmax(0,1fr) 245px;gap:18px;align-items:center}
 .bank-label{font-size:16px;font-weight:800;color:#086145;display:flex;align-items:center;gap:10px;margin:0 0 15px}
 .bank-icon{width:29px;height:29px;border-radius:7px;display:grid;place-items:center;color:#fff;background:#07805c;font-weight:800}
 .field-line{display:grid;grid-template-columns:180px minmax(0,1fr);gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px dashed #cddbd3;font-size:14px}
@@ -37,6 +37,7 @@ h1{font-size:clamp(19px,2.65vw,25px);line-height:1.24;letter-spacing:0;color:var
 .small-btn{background:white;border:1px solid #b6d2c4;color:#07553f;font-size:12px;font-weight:800;padding:5px 10px;border-radius:8px;min-height:34px}
 .qr-wrap{text-align:center;min-width:0}
 .qr{display:block;width:170px;max-width:100%;aspect-ratio:1/1;object-fit:contain;background:white;border:1px solid #d4e4db;border-radius:8px;padding:6px;margin:auto}
+.qr-bank{width:235px;height:auto;aspect-ratio:1/1}.qr-actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:12px}.action-btn{display:inline-flex;justify-content:center;align-items:center;gap:6px;padding:10px 12px;border:1px solid #9bc9b4;border-radius:10px;background:#fff;color:#07553f;font-weight:700;font-size:12px;line-height:1.35;min-height:42px}.action-btn.primary-action{background:#086b4b;color:white;border-color:#086b4b}.action-btn:focus-visible,.small-btn:focus-visible{outline:3px solid #168cc6;outline-offset:2px}.toast{position:fixed;z-index:1000;bottom:24px;left:50%;transform:translate(-50%,25px);background:#113d30;color:white;border-radius:12px;padding:13px 20px;box-shadow:0 12px 32px #0003;font-size:14px;font-weight:700;text-align:center;max-width:calc(100vw - 28px);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s;pointer-events:none}.toast.show{opacity:1;visibility:visible;transform:translate(-50%,0)}.toast.error{background:#a32c2c}
 .qr-caption{display:block;margin-top:7px;font-size:11px;color:var(--muted)}
 .note{border-left:4px solid #dfb52a;background:#fff8e1;border-radius:0 8px 8px 0;padding:13px 17px;font-size:13px;margin-top:13px}
 .zalo-card{border-color:#cedeee;background:linear-gradient(110deg,#eef5ff,#e6eef9)}
@@ -57,12 +58,12 @@ h1{font-size:19px}.intro{font-size:14px;margin-bottom:19px}
 .section-title{font-size:16px;margin-top:22px}.step{width:29px;height:29px}
 .info-card{grid-template-columns:1fr;gap:18px;padding:18px 16px}
 .field-line{grid-template-columns:1fr;gap:1px;padding:8px 0}.field-line .value{font-size:14px}.field-line .account-value{font-size:21px}
-.qr{width:188px}.qr-caption{font-size:12px}
+.qr{width:195px}.qr-bank{width:min(260px,100%)}.qr-actions{flex-direction:column}.action-btn{width:100%;font-size:13px;min-height:46px}.qr-caption{font-size:12px}.toast{bottom:16px}
 .zalo-content{text-align:left}.zalo-link{width:100%}
 .footer{flex-direction:column;gap:13px}.sign{text-align:left}
 }
-@media(min-width:701px) and (max-width:900px){.page{margin:16px;max-width:none}.info-card{grid-template-columns:minmax(0,1fr) 155px}.qr{width:150px}.field-line{grid-template-columns:160px minmax(0,1fr)}}
-@media print{body{background:#fff}.page{box-shadow:none;border:0;margin:0;max-width:none;padding:10mm}.small-btn{display:none}.info-card{-webkit-print-color-adjust:exact;print-color-adjust:exact}.footer{break-inside:avoid}}
+@media(min-width:701px) and (max-width:900px){.page{margin:16px;max-width:none}.info-card{grid-template-columns:minmax(0,1fr) 205px}.qr{width:160px}.qr-bank{width:195px}.qr-actions{flex-direction:column}.action-btn{width:100%}.field-line{grid-template-columns:160px minmax(0,1fr)}}
+@media print{body{background:#fff}.page{box-shadow:none;border:0;margin:0;max-width:none;padding:10mm}.small-btn,.qr-actions,.toast{display:none}.info-card{-webkit-print-color-adjust:exact;print-color-adjust:exact}.footer{break-inside:avoid}}
 </style>
 </head>
 <body>
@@ -85,7 +86,7 @@ h1{font-size:19px}.intro{font-size:14px;margin-bottom:19px}
 <div class="field-line"><span>Chủ tài khoản</span><strong class="value" id="account-name">NGUYỄN THỊ PHƯƠNG</strong></div>
 <div class="field-line"><span>Nội dung chuyển khoản</span><span class="copyable"><strong class="value" id="transfer-note">Họ tên thí sinh - Lớp - THCS Phú La</strong><button class="small-btn" data-copy="transfer-note" aria-label="Sao chép nội dung chuyển khoản">Sao chép</button></span></div>
 </div>
-<div class="qr-wrap"><img id="bank-qr" class="qr" alt="Mã VietQR chuyển khoản đến tài khoản Ban Tổ chức" loading="eager"><small class="qr-caption">Quét mã để chuyển khoản</small></div>
+<div class="qr-wrap"><img id="bank-qr" class="qr qr-bank" alt="Mã VietQR chuyển khoản đến tài khoản Ban Tổ chức" loading="eager"><small class="qr-caption">Quét mã để chuyển khoản</small><div class="qr-actions"><button type="button" class="action-btn primary-action" id="download-qr">↓ Tải mã QR</button><button type="button" class="action-btn" id="copy-bank-info">⧉ Sao chép thông tin nhận tiền</button></div></div>
 </div>
 <div class="note"><strong>Lưu ý:</strong> Sau khi hoàn tất thanh toán, BTC sẽ tiến hành xuất hóa đơn VAT theo thông tin phụ huynh đã cung cấp trong vòng 48 giờ. Vui lòng kiểm tra kỹ tên chủ tài khoản và nội dung chuyển khoản trên ứng dụng ngân hàng trước khi xác nhận.</div>
 </section>
@@ -102,6 +103,7 @@ h1{font-size:19px}.intro{font-size:14px;margin-bottom:19px}
 </section>
 <footer class="footer"><div><strong>Liên hệ hỗ trợ</strong><div>Hotline: <a href="tel:0969627162">0969 627 162</a> (08:00–17:30, thứ Hai – thứ Sáu)</div><div>Email: <a href="mailto:khaothi@fermat.vn">khaothi@fermat.vn</a></div><p class="status" id="status" aria-live="polite"></p></div><div class="sign"><em>Trân trọng!</em>Ban Tổ chức</div></footer>
 </main>
+<div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 <script>
 /*
  * Thay đổi thông tin từng trường tại CONFIG hoặc truyền tham số URL:
@@ -140,11 +142,51 @@ if(validZalo){
 }else{
  zl.removeAttribute('href');zl.textContent='Chưa cấu hình liên kết Zalo hợp lệ';zqr.hidden=true;
 }
-document.querySelectorAll('[data-copy]').forEach(btn=>btn.addEventListener('click',async()=>{
- const value=document.getElementById(btn.dataset.copy).textContent;
- try{await navigator.clipboard.writeText(value);document.getElementById('status').textContent='Đã sao chép: '+value}
- catch{document.getElementById('status').textContent='Không thể tự sao chép, vui lòng chọn và sao chép thông tin thủ công.'}
+let toastTimeout;
+function notify(message,error=false){
+ const el=document.getElementById('toast');
+ el.textContent=message;el.classList.toggle('error',error);el.classList.add('show');
+ clearTimeout(toastTimeout);toastTimeout=setTimeout(()=>el.classList.remove('show'),3200);
+}
+async function copyText(value,label){
+ try{
+  if(navigator.clipboard?.writeText && window.isSecureContext){
+   await navigator.clipboard.writeText(value);
+  }else{
+   const el=document.createElement('textarea');el.value=value;el.style.position='fixed';el.style.opacity='0';
+   document.body.appendChild(el);el.select();const ok=document.execCommand('copy');el.remove();
+   if(!ok)throw new Error('Không sao chép được');
+  }
+  notify('✓ Đã sao chép '+label);
+ }catch(e){notify('Không sao chép được. Vui lòng thử lại hoặc sao chép thủ công.',true)}
+}
+document.querySelectorAll('[data-copy]').forEach(btn=>btn.addEventListener('click',()=>{
+ const id=btn.dataset.copy;
+ copyText(document.getElementById(id).textContent,id==='account'?'số tài khoản':'nội dung chuyển khoản');
 }));
+document.getElementById('copy-bank-info').addEventListener('click',()=>{
+ const details='Ngân hàng: '+cfg.bankName+'\\nSố tài khoản: '+cfg.account+'\\nChủ tài khoản: '+cfg.accountName+'\\nNội dung chuyển khoản: '+transferNote;
+ copyText(details,'thông tin nhận tiền');
+});
+document.getElementById('download-qr').addEventListener('click',async function(){
+ const btn=this;btn.disabled=true;const original=btn.textContent;btn.textContent='Đang chuẩn bị...';
+ try{
+  const response=await fetch(bankQR.toString());
+  if(!response.ok)throw new Error('Không thể tải ảnh');
+  const blob=await response.blob();
+  if(!blob.type.startsWith('image/'))throw new Error('Phản hồi không phải ảnh');
+  const blobURL=URL.createObjectURL(blob);
+  const a=document.createElement('a');a.href=blobURL;a.download='VietQR-FIMO-FIEO-'+cfg.account+'.png';
+  document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(blobURL),10000);
+  notify('✓ Đã yêu cầu tải mã QR. Kiểm tra mục Tệp đã tải trên điện thoại.');
+ }catch(e){
+  // Trình duyệt hoặc nhà cung cấp ảnh chặn tải trực tiếp: mở ảnh để lưu thủ công.
+  const a=document.createElement('a');a.href=bankQR.toString();a.target='_blank';a.rel='noopener noreferrer';
+  document.body.appendChild(a);a.click();a.remove();
+  notify('Đã mở ảnh QR. Nhấn giữ ảnh để lưu về điện thoại.');
+ }finally{btn.disabled=false;btn.textContent=original}
+});
 </script>
 </body>
 </html>
